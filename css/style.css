@@ -1,0 +1,177 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: #F9F9F9;
+}
+
+.header{
+    padding:20px 7%;
+    
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+nav .headerlist li{
+    display:inline-block;
+    padding:20px 20px;
+    color: var(--black, #303031);
+    font-size: 20px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+   
+}
+
+
+
+.logo img{
+    width: 68px;
+    height: 40px;
+}
+
+nav .headerlist li:nth-child(6n+5){
+    color: var(--green, #71A894);
+font-size: 20px;
+font-family: Proxima Nova;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.4px;
+}
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliderright{
+    position: relative;
+    width: 672.099px;
+    height: 719.628px;
+    flex-shrink: 0;
+    background-color:#F3F0EA;
+}
+
+.sliderright img{
+    width: 712px;
+    height: 569.578px;
+    flex-shrink: 0;
+}
+
+.header .fa-bars{
+    color: black;
+    font-size: 28px;
+   visibility: hidden;
+}
+
+
+.headernavlogo{
+    display:flex;
+    align-items: center;
+}
+
+.headernavlogo .logo {
+    color: var(--black, #303031);
+    font-size: 32px;
+    font-family: Futura Round Demi;
+    font-style:normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.28px;
+    text-decoration: none;
+    padding-left:10px;
+
+}
+
+
+@media (max-width:660px) {
+    
+    .header .fa-bars{
+        visibility:visible;
+        display: block;
+        
+    }
+
+    nav{
+        
+    text-align: right;
+    display: flex;
+    align-items: flex-start;
+    max-height: 60px;
+	position: relative;
+	width:100%;
+	z-index:100;
+	overflow: hidden;
+	transition: max-height 0.5s;
+        
+        
+    }
+
+    .headernavlogo .logo {
+        color: var(--black, #303031);
+        font-size: 22px;
+        font-family: Futura Round Demi;
+        font-style:normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -1.28px;
+        text-decoration: none;
+        padding-left:5px;
+        visibility:hidden;
+    
+    }
+
+    nav .headerlist{
+        font-size: 20px;
+        font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.4px;
+        margin-top:14px;
+       
+    }
+
+
+    .slider{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sliderright{
+        width:100%;
+
+        flex-shrink: 0;
+        background-color:#F3F0EA;
+    }
+    
+    .sliderright img{
+        width: 100%;
+        height:50%;
+        flex-shrink: 0;
+    }
+
+    .hidemenu{
+        max-height:360px;
+    }
+    
+
+  
+
+}

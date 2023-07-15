@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet"   href="css/style.css"/>
+</head>
+
+
+<body>
+    <div class="header">
+        <nav id="navBar">
+            <div class="headernavlogo">
+                <img src="img/logo.svg">
+                <div class="logo">Open Enterprise</div>
+            </div>
+
+         
+
+            <ul class="headerlist">
+                <i class="fa fa-bars" onclick="tooglebtn()" aria-hidden="true"></i>
+                <li>Why Open Enterprise</li>
+                <li>Features</li>
+                <li>Contribute</li> 
+                <li>Request early access</li>
+  
+            </ul>
+           
+        </nav>
+
+        <div class="slider">
+            <div class="sliderleft">
+                <div class="sliderleft_c">
+                    A new model for open collaboration
+                    <p>Run an organization where members get rewarded for their contributions with fractional ownership.</p>
+                </div>
+                <button>Request Early Access</button>
+            </div>
+
+            <div class="sliderright"><img src="img/illustration.png"></div>
+        </div>
+    </div>
+
+    <script>
+    let navBar=document.getElementById("navBar")
+    if(navBar)
+    {
+        function tooglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+    }
+    </script>
+</body>
+</html>
